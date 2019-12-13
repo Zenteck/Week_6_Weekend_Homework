@@ -11,7 +11,7 @@
   <div id="rocket-wrapper">
 <div class="form-item">
     <label for="firstStage" class="primary">Pick your first stage</label>
-    <select id="firstStage">
+    <select id="firstStage" required>
       <option value="" disabled selected></option>
       <option value="Atlas">Atlas</option>
       <option value="Delta">Delta</option>
@@ -21,7 +21,7 @@
 
 <div class="form-item">
     <label for="secondStage" class="primary">Pick your second stage</label>
-    <select id="secondStage">
+    <select id="secondStage" required>
       <option value="" disabled selected></option>
       <option value="Centaur">Centaur</option>
       <option value="Ariane-ES">Ariane ES</option>
@@ -41,11 +41,11 @@
 
     <div>
         <input type="radio" id="noParachutes"
-         name="parachutes" value="No parachutes">
+         name="parachutes" value="No parachutes" required checked>
         <label for="noParachutes">No Parachutes</label>
 
         <input type="radio" id="parachutes"
-         name="parachutes" value="Has parachutes">
+         name="parachutes" value="Has parachutes" required>
         <label for="Parachutes">Parachutes!</label>
       </div>
 
